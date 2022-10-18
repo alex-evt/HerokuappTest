@@ -12,7 +12,7 @@ public class AddRemoveElementsTest extends BrowserSetUp {
         driver.findElement(By.xpath("//button[text()='Add Element']")).click();
         driver.findElement(By.xpath("//button[text()='Add Element']")).click();
         driver.findElement(By.xpath("//button[text()='Delete']")).click();
-        int delButtonsNumber = driver.findElements(By.xpath("//button[text()='Delete']")).size();
-        Assert.assertEquals(delButtonsNumber, 1);
+        int actualButtonsNumber = driver.findElements(By.xpath("//button[text()='Delete']")).size();
+        Assert.assertEquals(actualButtonsNumber, 1);
     }
 }
